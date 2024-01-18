@@ -1,0 +1,33 @@
+.wrapper{
+background-color: grey;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+grid-template-rows: 50px 300px  200px 100px;
+grid-gap:10px ;
+}
+.navBar{
+background-color: pink;
+grid-column: 1/5;
+}
+.sideBar{
+background-color: peru;
+grid-column: 1/2;
+grid-row: 2/5;
+}
+
+.main{
+background-color: blueviolet;
+}
+
+.contain1{
+background-color: blue;
+}
+.contain2{
+    background-color: blue;  
+}
+.contain3{
+    background-color: blue;  
+}
+.footer{
+background-color: green;
+}
