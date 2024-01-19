@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    overflow-x: hidden;
+}
+.mainBox{
+    display: grid;  
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    /* above make it responsive - repeat(auto-fit, minmax(400px,1fr)) */
+    grid-gap:20px;
+    column-gap: 40px;
+    border: 2px solid blue;
+    padding: 30px;
+}
+
+.smallBox{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: antiquewhite;
+}
+.smallBox img{
+  width:50% ;  
+}

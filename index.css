@@ -1,8 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    overflow-x: hidden;
+}
 .wrapper{
 background-color: grey;
 display: grid;
 grid-template-columns: repeat(4,1fr);
-grid-template-rows: 50px 300px  200px 100px;
+grid-template-rows: 50px 300px  250px 100px;
 grid-gap:10px ;
 }
 .navBar{
@@ -17,6 +25,7 @@ grid-row: 2/5;
 
 .main{
 background-color: blueviolet;
+grid-column: 2/5;
 }
 
 .contain1{
@@ -30,4 +39,37 @@ background-color: blue;
 }
 .footer{
 background-color: green;
+grid-column: 2/5;
+}
+
+@media screen and (max-width:600px){
+    .wrapper{
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 50px  300px 100px 100px 100px 70px;
+        } 
+        .navBar{
+            grid-column: 1/-1;
+            /* 1 to -1 means 100% */
+            }
+            .sideBar{
+            grid-column: 1/-1;
+            grid-row: 2/3;
+            }
+            
+            .main{
+                grid-column: 1/-1;
+       
+            }
+            .contain1{
+                grid-column: 1/-1;
+            }
+            .contain2{
+                grid-column: 1/-1;
+            }
+            .contain3{
+                grid-column: 1/-1;
+            }
+            .footer{
+                grid-column: 1/-1;
+            }  
 }
