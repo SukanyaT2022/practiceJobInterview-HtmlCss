@@ -6,3 +6,29 @@
 html,body{
     overflow-x: hidden;
 }
+.mainBox{
+display: flex;
+flex-wrap: wrap;
+background-color: blue;
+width: 80%;
+margin: auto;
+justify-content: space-around;
+
+
+}
+.smallBox{
+  border: 2px solid green;  
+  background-color: aqua;
+  width:300px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ margin-bottom: 20px;
+}
+.smallBox img{
+    width: 70%;
+    padding: 20px;
+    height:200px ;
+    object-fit: cover ;
+}
