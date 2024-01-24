@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    overflow-x: hidden;
+}
+.main{
+background-color: pink;
+display: grid;
+grid-template-columns: 1fr 2fr 1fr;
+grid-template-rows: 100px 400px 100px;
+row-gap: 20px;
+column-gap:10px ;
+}
+.head{
+background-color: green;
+/* grid-column-start: 1;
+grid-column-end: -1; */
+grid-column: 1/-1;
+}
+.nav{
+background-color: blue;
+}
+.middle{
+background-color: blueviolet;
+}
+.sideBar{
+    background-color: bisque;
+}
+.footer{
+background-color: chocolate;
+grid-column: 1/-1;
+}
